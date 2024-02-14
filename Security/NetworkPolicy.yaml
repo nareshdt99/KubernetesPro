@@ -1,0 +1,38 @@
+# This file is used to define and link a network policy with a pod
+apiVersion: networking.k8s.io/v1
+kind: NetworkPolicy
+metadata:
+  name: <policy_name>
+spec:
+  # This pod selector maps policy with the pod where it needs to be applied
+  podSelector:
+    matchLabels:
+      role: <role_name>
+  policyTypes:
+  - Ingress
+  - Egress
+  ingress:
+  - from:
+      # We have defined 2 rules for ingress. First one means that the pod sending the traffic has
+      # to have a matching label and has to belong to a specific namespace
+      # 2nd rule is added with an OR condition
+    - podSelector:
+        matchLabels:
+          name: <app_label_name>
+      namespaceSelector:
+        matchLabels:
+          name: <prod/dev/stg>
+    - ipBlock:
+        cidr: <cidr_range>
+  egress:
+    # All 3 rules below are applied with an OR condition
+  - to:
+    - podSelector:
+        matchLabels:
+          name: <app_label_name>
+    - namespaceSelector:
+        matchLabels:
+          name: <prod/dev/stg>
+    - ipBlock:
+        cidr: <cidr_range>
+      

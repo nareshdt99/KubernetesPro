@@ -1,0 +1,10 @@
+# This file is used to create a role which can be binded with multiple users to set their permissions
+apiVersion: rbac.authorization.k8s.io/v1
+kind: Role
+metadata:
+  name: <role_name>
+rules:
+  - apiGroups: [""] #leave it blank for core apiGroup
+    resources: ["pods"]
+    verbs: ["list", "create", "update", "delete", "get"]
+    resourceNames: ["red", "orange"] # Optional field to restrict access to specific resources
