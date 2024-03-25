@@ -1,0 +1,29 @@
+# This file shows different ways to declare environment variables
+apiVersion: v1
+kind: Pod
+metadata:
+  name: webapp
+  labels:
+    name: webapp
+spec:
+  containers:
+  - name: ubuntu
+    image: ubuntu
+    env:
+      - name: APP_COLOR
+        value: blue
+      - name: APP_MODE
+        value: prod
+  - name: nginx
+    image: nginx
+    envFrom:
+      - configMapRef:
+          name: app-config  # will ingest all the environment variables defined in configmap named app-config
+  - name: redis
+    image: redis
+    env:
+      - name: APP_COLOR
+        valueFrom:
+          configMapKeyRef:  # will ingest value for APP_COLOR key from app-config for this container
+            name: app-config
+            key: APP_COLOR
