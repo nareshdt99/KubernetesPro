@@ -1,6 +1,6 @@
-## :arrows_clockwise: Application Lifecycle Management
+## :arrows_clockwise: APPLICATION LIFECYCLE MANAGEMENT
 
-### Rolling Updates and Rollbacks
+### ROLLING UPDATES AND ROLLBACKS
 1. Check rollout status
 
 
@@ -29,7 +29,7 @@
 
         $ kubectl rollout undo deployment <deployment_name>
 
-### Environment variables and ConfigMaps
+### ENVIRONMENT VARIABLES AND CONFIGMAPS
 1. Create configmap (imperative way):
   
         $ kubectl create configmap \
@@ -55,7 +55,7 @@
 
        $ kubectl describe configmap <configmap_name>
 
-### Secrets
+### SECRETS
 1. Create secrets (imperative way):
   
         $ kubectl create secret generic \
@@ -99,7 +99,7 @@
  
        $ echo -n '<encoded_value>' | base64 --decode
 
-NOTES about secrets:
+### NOTES ABOUT SECRETS:
 1. If we mount secret as a volume, each attribute in the secret is created as a file with the value of the secret as its content
 
 2.  Secrets are NOT encrypted. They are only encoded. So anyone can lookup the file we created for secret and decode it. Hence we should NEVER push secret objects to source control management tools with other code.
