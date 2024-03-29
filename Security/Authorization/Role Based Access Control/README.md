@@ -1,4 +1,4 @@
-## :curly_haired_woman: :man: :lock: ROLE BASED ACCESS CONTROL
+## <img src="https://github.com/ShivaniShah06/Kubernetes/raw/main/logos/rbac.png" width="19"> ROLE BASED ACCESS CONTROL
 
 ### ROLE AND ROLE BINDINGS
 1. Get roles

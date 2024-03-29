@@ -1,4 +1,4 @@
-## <img src="https://github.com/ShivaniShah06/Kubernetes/raw/main/Security/API%20Groups/API.png" width="18"> API Groups
+## <img src="https://github.com/ShivaniShah06/Kubernetes/raw/main/logos/API.png" width="19"> API Groups
 
 1. Check the version of the cluster, hit the api - `version` (port by default is `6443`)
    
