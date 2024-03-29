@@ -1,4 +1,4 @@
-## <img src="https://github.com/ShivaniShah06/Kubernetes/raw/main/Security/API%20Groups/API.png" width="19"> CERTIFICATES API
+## <img src="https://github.com/ShivaniShah06/Kubernetes/raw/main/logos/API.png" width="19"> CERTIFICATES API
 
 1. Get certificate signing requests
 
