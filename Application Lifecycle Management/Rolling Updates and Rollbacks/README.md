@@ -1,4 +1,4 @@
-## ROLLING UPDATES AND ROLLBACKS
+## :arrows_counterclockwise: :leftwards_arrow_with_hook: ROLLING UPDATES AND ROLLBACKS
 1. Check rollout status
 
 

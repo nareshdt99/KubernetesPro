@@ -1,0 +1,12 @@
+# This file is used to create a role which can be binded with multiple users to set their permissions
+# This object falls in the scope of namespaces. By default, it is created for default namespace
+apiVersion: rbac.authorization.k8s.io/v1
+kind: Role
+metadata:
+  name: <role_name>
+  namespace: <namespace> # Mention namespace if you want to limit your access by namespace
+rules:
+  - apiGroups: [""] #leave it blank for core apiGroup
+    resources: ["pods"]
+    verbs: ["list", "create", "update", "delete", "get"]
+    resourceNames: ["red", "orange"] # Optional field to restrict access to specific resources
