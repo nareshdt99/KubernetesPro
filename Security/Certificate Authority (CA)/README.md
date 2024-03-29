@@ -1,4 +1,4 @@
-## <img src="https://github.com/ShivaniShah06/Kubernetes/raw/main/logos/Certificate.png" width="19"> CERTIFICATE AUTHORITY (CA)
+## <img src="https://github.com/ShivaniShah06/Kubernetes/raw/main/logos/Certificate.png" width="25"> CERTIFICATE AUTHORITY (CA)
 
 1. CAs are well-known organizations that can sign and validate your certificates for you. Some of the popular ones are Symantec, Digicert, GlobalSign, etcetera
  
