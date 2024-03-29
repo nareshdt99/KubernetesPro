@@ -1,4 +1,4 @@
-## ENVIRONMENT VARIABLES AND CONFIGMAPS
+## :abcd: :1234: ENVIRONMENT VARIABLES AND CONFIGMAPS
 1. Create configmap (imperative way):
   
         $ kubectl create configmap \

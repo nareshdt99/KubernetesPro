@@ -1,0 +1,10 @@
+# This file is used to create a role which can be binded with multiple users to set their permissions
+# The only difference between a normal role and a cluster role is that the cluster role is cluster wide whereas role is namespace wide
+apiVersion: rbac.authorization.k8s.io/v1
+kind: ClusterRole
+metadata:
+  name: <clusterrole_name>
+rules:
+  - apiGroups: [""] #leave it blank for core apiGroup
+    resources: ["nodes"]
+    verbs: ["list", "create", "delete", "get"] 

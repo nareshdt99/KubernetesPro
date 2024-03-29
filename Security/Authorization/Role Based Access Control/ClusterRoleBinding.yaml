@@ -1,0 +1,14 @@
+# This file is used to bind users with ClusterRoles for role based access control to various resources in kubernetes
+
+apiVersion: rbac.authorization.k8s.io/v1
+kind: ClusterRoleBinding
+metadata:
+  name: <clusterrolebinding_name>
+subjects:
+- kind: User
+  name: <user_name>
+  apiGroup: rbac.authorization.k8s.io
+roleRef:
+  kind: ClusterRole
+  name: <clusterrole_name_to_be_binded_with>
+  apiGroup: rbac.authorization.k8s.io

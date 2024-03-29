@@ -1,4 +1,4 @@
-## SECRETS
+## :lock: :secret: SECRETS
 1. Create secrets (imperative way):
   
         $ kubectl create secret generic \
