@@ -1,0 +1,17 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: <pod_name>
+spec:
+  containers:
+    - name: <name>
+      image: <image-name>
+      command: ['sh', '-c', 'echo "The app is running!" && tail -f /dev/null']
+      volumeMounts: # on container
+        - mountPath: /opt
+          name: data-volume
+  volumes: # on host where container's data will be stored for safety
+    - name: data-volume
+      hostPath:
+        path: /data
+        type: Directory
