@@ -1,4 +1,4 @@
-## <img src="https://github.com/ShivaniShah06/Kubernetes/raw/main/logos/PV.png" width="35"> PERSISTENT VOLUMES AND PERSISTENT VOLUME CLAIMS
+## <img src="https://github.com/ShivaniShah06/Kubernetes/raw/main/logos/PV.png" width="19"> PERSISTENT VOLUMES AND PERSISTENT VOLUME CLAIMS
 
 ### :package: PERSISTENT VOLUMES (PV)
  - Used to manage storage centrally
@@ -12,8 +12,11 @@
   - Documentation: https://kubernetes.io/docs/concepts/storage/persistent-volumes/#persistentvolumeclaims
 
 :diamond_shape_with_a_dot_inside: Every PVC is bound to a single PV
+
 :diamond_shape_with_a_dot_inside: If we want to bind our PVC to a specific PV, we can use labels (in PV) and selectors (in PVC) to do so
+
 :diamond_shape_with_a_dot_inside: There is 1-1 relationship between PVC and PV so no other PVC can claim the remaining volume of an already claimed PV
+
 :diamond_shape_with_a_dot_inside: To get PVC and PV
 
     $ kubectl get persistentvolume|persistentvolumeclaim
