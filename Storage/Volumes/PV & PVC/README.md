@@ -1,4 +1,4 @@
-## <img src="https://github.com/ShivaniShah06/Kubernetes/raw/main/logos/PV.png" width="19"> PERSISTENT VOLUMES AND PERSISTENT VOLUME CLAIMS
+## <img src="https://github.com/ShivaniShah06/Kubernetes/raw/main/logos/PV.png" width="30"> PERSISTENT VOLUMES AND PERSISTENT VOLUME CLAIMS
 
 ### :package: PERSISTENT VOLUMES (PV)
  - Used to manage storage centrally
@@ -10,6 +10,8 @@
   - Users can select storage from pool of storage volumes (persistent volumes) using Persistent Volume Claims
   - Are created by users to access storage volumes
   - Documentation: https://kubernetes.io/docs/concepts/storage/persistent-volumes/#persistentvolumeclaims
+
+
 
 :diamond_shape_with_a_dot_inside: Every PVC is bound to a single PV
 
