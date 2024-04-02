@@ -2,3 +2,7 @@
 
 
 ## This repository contains different configuration files for Kubernetes components as well as important commands to work with Kubernetes.
+
+#### References:
+
+https://github.com/kodekloudhub/certified-kubernetes-administrator-course/tree/master 
