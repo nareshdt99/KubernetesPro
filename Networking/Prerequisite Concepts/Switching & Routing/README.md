@@ -1,4 +1,4 @@
-## <img src="https://github.com/ShivaniShah06/Kubernetes/raw/main/logos/Route.png" width="19"> SWITCHING & ROUTING
+## <img src="https://github.com/ShivaniShah06/Kubernetes/raw/main/logos/Route.png" width="32"> SWITCHING & ROUTING
 
 ### <img src="https://github.com/ShivaniShah06/Kubernetes/raw/main/logos/Switch.png" width="19"> SWITCH:
 - Enables communication between devices within the `same network`
@@ -45,3 +45,5 @@
       - Changing value of `/proc/sys/net/ipv4/ip_forward` to `1`
       AND
       - Changing value of `net.ipv4.ip_forward` setting to `1` at `/etc/sysctl.conf`
+
+
