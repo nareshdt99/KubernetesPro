@@ -1,7 +1,5 @@
 ## <img src="https://github.com/ShivaniShah06/Kubernetes/raw/main/logos/Terminal.png" width="30"> ADVANCE KUBECTL COMMANDS
 
-- Take me to the [Lecture](https://kodekloud.com/topic/advanced-kubectl-commands/)
-
   - To get the output of **`kubectl`** in a json format: 
 
     ```

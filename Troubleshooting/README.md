@@ -57,7 +57,7 @@
          $ openssl x509 -in <cert-location> -text
 - kubelet config files can be found at `/etc/kubernetes/kubelet.conf` and `/var/lib/kubelet/` folder
 
-### NETWORKING TROUBLESHOOTING
+### :diamond_shape_with_a_dot_inside: NETWORKING TROUBLESHOOTING
  - Find details about the network plugins in this documentation: https://kubernetes.io/docs/concepts/cluster-administration/addons/#networking-and-network-policy
  - Debug Service issues: https://kubernetes.io/docs/tasks/debug-application-cluster/debug-service/
  - DNS Troubleshooting: https://kubernetes.io/docs/tasks/administer-cluster/dns-debugging-resolution/
