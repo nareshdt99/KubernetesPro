@@ -1,0 +1,13 @@
+# Persistent Volume yaml file
+apiVersion: v1
+kind: PersistentVolume
+metadata:
+  name: example-pv
+spec:
+  capacity:
+    storage: 100Gi
+  accessModes:
+  - ReadWriteOnce
+  local:
+    path: /mnt/disks/ssd1
+  persistentVolumeReclaimPolicy: Recycle|Retain|Delete # defines what to do with the volume if corresponding volumeclaim has been deleted. Find more information at https://kubernetes.io/docs/concepts/storage/persistent-volumes/#reclaim-policy
